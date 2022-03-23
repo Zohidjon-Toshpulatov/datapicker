@@ -1,0 +1,31 @@
+::ng-deep .ng-mydp{
+    width: 100%;
+
+    .myDpSelector{
+        position: absolute !important;
+        top: 140px !important;
+        border: none !important;
+        margin-left: 10px;
+        box-shadow: none !important;
+    }
+
+    .myDpSelectorArrow::before {
+        border-color: none;
+        border-bottom-color: white !important; 
+    }
+}
+
+.drop-calendar{
+    height: 370px;
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    h1{
+        margin-left: 5px;
+    }
+}
+
+.cl-img{
+    width: 20px;
+}

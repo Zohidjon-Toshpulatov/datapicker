@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 mx-auto">
+      <div class="input-group">
+        <!-- input box -->
+        <input class="form-control" name="mydate" placeholder="Select a date" angular-mydatepicker
+          #dp="angular-mydatepicker" [(ngModel)]="model" [options]="myDpOptions"
+          (dateChanged)="onDateChanged($event)" />
+
+
+
+        <!-- toggle calendar button -->
+        <div class="input-group-append">
+          <button type="button" class="btn btn-secondary" (click)="toggle(dp)">
+            <img src="../../assets/school-calendar.svg" alt="" class="cl-img">
+          </button>
+        </div>
+
+      </div>
+      <div *ngIf="myDpOptions.inline" class='drop-calendar'>
+        <h3 class="fw-bold">End Date</h3>
+        <button class="mb-5 border-0 bg-white" (click)="clearDate(dp)">
+          <input type="radio" name="" id="" class="border-0 bg-white">
+          No End Date
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
